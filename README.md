@@ -30,7 +30,7 @@ source init_env.sh
 Run experiments for the different datasets as follows:
 
 ```console
-scripts/run.py config/mnist/dp_e_100.yaml --gpu-device 0
+python run.py config/mnist/dp_e_100.yaml --gpu-device 0
 ```
 
 This command trains `N` nodes using DP-DSGD on the MNIST classification task using GPU 0. The `config` directory holds configuration files for the different experiments, specifying the hyperparameters used for each experiment. The first field in every config file is `exp_base`, which specifies the base directory to save experiment outputs. You should change this for your own setup and also update the dataset paths in `src/datasets/dataset_name.py`. The experiments include standard central SGD, DSGD, DSGT, and DiNNO training as well as DP-SGD and our algorithms DP-DSGD, DP-DSGT, and DP-DiNNO.
