@@ -1,4 +1,4 @@
-# Differentially Private Decentralized Deep Learning with Consensus Algorithms
+# Generalizing Differentially Private Decentralized Deep Learning with Multi-Agent Consensus
 
 Anonymous Authors
 
